@@ -19,12 +19,47 @@ COLORS
   justify-content: space-between;
 }
 
+.column {
+  flex-direction: column;
+}
+
+.m-auto {
+  margin: auto;
+}
+
 section, section.reduce, #slider {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+#FirstCat {
+  top: -216px;
+  right: 0;
+}
+
+#SecondCat {
+  top: 219px;
+  left: 0;
+}
+
+#fusee {
+  left: 0%;
+  top: 33px;
 }
 
 .bg-grey {
   background-color: #DEDBD5;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
 
 body {
@@ -39,8 +74,12 @@ a {
 
 h2 {
   font-size: 48Px;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   color: #C09A54;
+}
+
+p {
+  text-align: justify;
 }
 
 .bg-grey h2 {
@@ -64,6 +103,10 @@ h2 {
   width: 30%;
 }
 
+.quart {
+  width: 24%;
+}
+
 .fifty {
   width: 49%;
 }
@@ -77,12 +120,41 @@ h2 {
   height: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .reduce {
+    width: 95%;
+  }
+
+  .fifty {
+    width: 100%;
+  }
+}
 .product {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.product .InfoProduct {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.product .InfoProduct :nth-child(1) {
+  text-align: left;
+  width: 80%;
+}
+.product .InfoProduct :nth-child(2) {
+  width: 18%;
+}
+.product .InfoProduct :nth-child(3) {
+  width: 20%;
+}
+.product .InfoProduct :nth-child(4) {
+  width: 70%;
 }
 
 header {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -122,6 +194,21 @@ header nav ul li {
 }
 #Navbar .reduce {
   height: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 2rem 0;
+  border-radius: 20px;
+  transition: box-shadow 500ms;
+}
+.btn:hover {
+  box-shadow: 5px 5px 5px #C09A54;
+}
+
+.btn-gold {
+  background: linear-gradient(#E2BF83, #F4DDA8, #E2BF83);
 }
 
 /*# sourceMappingURL=style.css.map */
