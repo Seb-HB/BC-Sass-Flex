@@ -6,4 +6,122 @@
   box-sizing: border-box;
 }
 
+/****************************************************************
+COLORS
+********************************************************/
+.InBl {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section, section.reduce, #slider {
+  margin-bottom: 4rem;
+}
+
+.bg-grey {
+  background-color: #DEDBD5;
+}
+
+body {
+  color: black;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-size: 48Px;
+  margin: 2rem 0;
+  color: #C09A54;
+}
+
+.bg-grey h2 {
+  color: inherit;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.reduce {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tiers {
+  width: 30%;
+}
+
+.fifty {
+  width: 49%;
+}
+
+.two-col {
+  width: 16%;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.product {
+  background-color: white;
+  border-radius: 5px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+header .reduce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  width: 50%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  display: inline-block;
+}
+
+#Logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#InfoBar {
+  background-color: #088038;
+  height: 30px;
+}
+
+#Navbar {
+  background-color: rgba(11, 10, 10, 0.7);
+  height: 40px;
+}
+#Navbar .reduce {
+  height: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */

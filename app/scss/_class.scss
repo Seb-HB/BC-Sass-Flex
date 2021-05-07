@@ -1,0 +1,21 @@
+.InBl{
+    display:inline-block;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+section, section.reduce, #slider{
+    margin-bottom: $section-margin;
+}
+
+#category{
+
+}
+
+.bg-grey{
+    background-color: $section-bg;
+}

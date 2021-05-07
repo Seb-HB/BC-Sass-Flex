@@ -1,0 +1,44 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $white;
+    .reduce{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        width: 50%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+#Logo {
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+
+#InfoBar {
+    background-color: $green;
+    height: 30px;
+
+}
+
+#Navbar {
+    background-color: $trans-black;
+    height: 40px;
+    .reduce{
+        height:40px
+    }
+}
