@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tocss": "sass ./app/scss/main.scss ./public/CSS/style.css --watch",
-    "mini": "sass ./app/scss/main.scss ./public/SCSS/style.css --style compressed"
+    "mini": "sass ./app/scss/main.scss ./public/CSS/style.css --style compressed"
   },
   "repository": {
     "type": "git",

@@ -9,9 +9,5 @@
     }
 }
 .btn-gold{
-    background:  linear-gradient($btn-gold, $btn-gold-gradient, $btn-gold);
-    &:hover{
-       // background: $head-gold;
-    }
-    
+    background:  linear-gradient($btn-gold, $btn-gold-gradient, $btn-gold);   
 }

@@ -1,0 +1,25 @@
+
+#FirstCat{
+    top: -216px;
+    right: 0;
+}
+#SecondCat{
+    top: 219px;
+    left: 0;
+}
+#fusee{
+    left: 0%;
+    top: 33px;
+}#dogs{
+    top: -224px;
+    left: 19%;
+}
+
+.one{
+    height: 30px;
+    display: inline-block;
+    &::before{
+        content: url("/public/img/ico/Livraison\ blanc\ 1.png");
+        vertical-align: middle;
+    }
+}
