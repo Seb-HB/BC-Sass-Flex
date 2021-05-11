@@ -213,8 +213,8 @@ header nav ul li {
 }
 
 #SecondCat {
-  top: 219px;
-  left: 0;
+  bottom: -80px;
+  left: -5px;
 }
 
 #fusee {
@@ -234,6 +234,56 @@ header nav ul li {
 .one::before {
   content: url("/public/img/ico/Livraison blanc 1.png");
   vertical-align: middle;
+}
+
+#avis > :nth-child(2) {
+  margin: 2rem auto;
+}
+
+#avis div div {
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-image: url("/public/img/footer.png");
+  min-height: 427px;
+}
+
+#slider {
+  position: relative;
+  height: 700px;
+  animation: sliding 10s infinite;
+}
+#slider img {
+  position: absolute;
+  top: 0;
+}
+#slider :nth-child(1) {
+  left: 0;
+}
+#slider :nth-child(2) {
+  left: 1920px;
+}
+#slider :nth-child(3) {
+  left: 3840px;
+}
+
+@keyframes sliding {
+  from {
+    left: 0;
+  }
+  35% {
+    left: 0;
+  }
+  50%, 85% {
+    left: -1920px;
+  }
+  99% {
+    left: -3840px;
+  }
+  to {
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,8 +4,8 @@
     right: 0;
 }
 #SecondCat{
-    top: 219px;
-    left: 0;
+    bottom: -80px;
+    left: -5px;
 }
 #fusee{
     left: 0%;
@@ -22,4 +22,16 @@
         content: url("/public/img/ico/Livraison\ blanc\ 1.png");
         vertical-align: middle;
     }
+}
+
+#avis>:nth-child(2){
+    margin: 2rem auto;
+}
+#avis div div{
+    margin-bottom: 3rem;
+}
+
+footer{
+    background-image: url('/public/img/footer.png');
+    min-height: 427px;
 }

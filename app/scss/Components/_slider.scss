@@ -1,0 +1,42 @@
+#slider{
+    position: relative;
+    height: 700px;
+
+    img{
+        position: absolute;
+        top: 0;
+    }
+    :nth-child(1){
+        left: 0;
+    }
+    :nth-child(2){
+        left: 1920px;
+    }
+    :nth-child(3){
+        left: 3840px;
+    }
+    // &:hover :nth-child(2){
+    //     left: 0;
+    // }
+    animation: sliding 10s infinite;
+
+}
+@keyframes sliding {
+    from {
+        left: 0;
+    }
+    35%{
+        left: 0;
+    }
+    50%, 85%{
+        left: -1920px;
+    }
+
+    99%{
+        left: -3840px;
+    }
+  
+    to {
+        left: 0;
+    }
+  }
