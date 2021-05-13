@@ -90,6 +90,14 @@ p {
   text-align: right;
 }
 
+.flex-right {
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
 .reduce {
   width: 80%;
   margin: 0 auto;
@@ -164,6 +172,7 @@ header .reduce {
 }
 header nav {
   width: 50%;
+  line-height: 40px;
 }
 header nav ul {
   display: flex;
@@ -174,7 +183,6 @@ header nav ul li {
 }
 header nav ul li:hover #sousmenu {
   display: flex;
-  background-color: blue;
 }
 
 #Logo {
@@ -186,6 +194,15 @@ header nav ul li:hover #sousmenu {
 #InfoBar {
   background-color: #088038;
   height: 30px;
+}
+#InfoBar .reduce {
+  height: 100%;
+}
+#InfoBar .reduce div {
+  display: flex;
+}
+#InfoBar .reduce div img, #InfoBar .reduce div span {
+  margin-right: 5px;
 }
 
 #Navbar {
@@ -285,18 +302,21 @@ header nav ul li:hover #sousmenu {
 }
 #sousmenu {
   position: absolute;
-  display: flex;
+  display: none;
   width: 39.5833333333vw;
   left: 190px;
+  top: 70px;
   background-color: white;
   justify-content: space-around;
   padding: 0 20px;
+  line-height: initial;
 }
 
 #ss-menu-items {
   flex: 80%;
   display: flex;
   text-align: left;
+  margin-left: 30px;
 }
 
 .itemscolumn {
@@ -327,15 +347,6 @@ header nav ul li:hover #sousmenu {
 #dogs {
   top: -224px;
   left: 19%;
-}
-
-.one {
-  height: 30px;
-  display: inline-block;
-}
-.one::before {
-  content: url("/public/img/ico/Livraison blanc 1.png");
-  vertical-align: middle;
 }
 
 #avis > :nth-child(2) {

@@ -13,6 +13,7 @@ header {
     }
     nav{
         width: 50%;
+        line-height: 40px;
         ul{
             display: flex;
             justify-content: space-between;
@@ -21,7 +22,6 @@ header {
                 &:hover{
                     #sousmenu{
                         display: flex;
-                        background-color: blue;
                     }
                 }
             }
@@ -39,6 +39,15 @@ header {
 #InfoBar {
     background-color: $green;
     height: 30px;
+    .reduce{
+        height: 100%;
+        div{
+            display: flex;
+            img, span{
+                margin-right: 5px;
+            }
+        }
+    }
 
 }
 
