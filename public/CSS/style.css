@@ -172,6 +172,10 @@ header nav ul {
 header nav ul li {
   display: inline-block;
 }
+header nav ul li:hover #sousmenu {
+  display: flex;
+  background-color: blue;
+}
 
 #Logo {
   position: absolute;
@@ -205,6 +209,104 @@ header nav ul li {
 
 .btn-gold {
   background: linear-gradient(#E2BF83, #F4DDA8, #E2BF83);
+}
+
+#slider {
+  position: relative;
+  height: 36.4583333333vw;
+}
+#slider .slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+#slider .slide div {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+#slider .slide div p {
+  font-size: 4rem;
+}
+#slider .slide:nth-child(1) {
+  left: 0;
+  animation: first-slide 20s linear 10s;
+}
+#slider .slide:nth-child(2) {
+  left: 100%;
+  animation: left-sliding 20s linear 20s infinite;
+}
+#slider .slide:nth-child(3) {
+  color: white;
+  left: 100%;
+  animation: left-sliding 20s linear 10s infinite;
+}
+#slider .slide:nth-child(3) a {
+  color: black;
+}
+
+@keyframes left-sliding {
+  from {
+    left: 100%;
+  }
+  5% {
+    left: 0;
+  }
+  50% {
+    left: 0;
+  }
+  55% {
+    left: -100%;
+  }
+  55.1% {
+    left: -105%;
+  }
+  99.9% {
+    left: -105%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes first-slide {
+  from {
+    left: 0;
+  }
+  5% {
+    left: -100%;
+  }
+  99.9% {
+    left: -105%;
+  }
+  to {
+    left: 100%;
+  }
+}
+#sousmenu {
+  position: absolute;
+  display: flex;
+  width: 39.5833333333vw;
+  left: 190px;
+  background-color: white;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+#ss-menu-items {
+  flex: 80%;
+  display: flex;
+  text-align: left;
+}
+
+.itemscolumn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  color: black;
+}
+.itemscolumn a {
+  flex: 30%;
 }
 
 #FirstCat {
@@ -247,43 +349,6 @@ header nav ul li {
 footer {
   background-image: url("/public/img/footer.png");
   min-height: 427px;
-}
-
-#slider {
-  position: relative;
-  height: 700px;
-  animation: sliding 10s infinite;
-}
-#slider img {
-  position: absolute;
-  top: 0;
-}
-#slider :nth-child(1) {
-  left: 0;
-}
-#slider :nth-child(2) {
-  left: 1920px;
-}
-#slider :nth-child(3) {
-  left: 3840px;
-}
-
-@keyframes sliding {
-  from {
-    left: 0;
-  }
-  35% {
-    left: 0;
-  }
-  50%, 85% {
-    left: -1920px;
-  }
-  99% {
-    left: -3840px;
-  }
-  to {
-    left: 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
